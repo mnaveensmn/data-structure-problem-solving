@@ -1,3 +1,7 @@
 Edited file
 Edited file 2
+<<<<<<< HEAD
 Edited file 3
+=======
+Edited file 4
+>>>>>>> 1915cc3271bb0b104a0e6b6d4d26c7802dc5ace2
