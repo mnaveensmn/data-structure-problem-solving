@@ -6,8 +6,6 @@ import java.util.OptionalInt;
 public class O01_CountingTriplets {
 
     public int countTriplets(int[] arr, int n) {
-
-        Arrays.sort(arr);
         int maxValue = Integer.MIN_VALUE;
         OptionalInt s = Arrays.stream(arr).max();
         if (s.isPresent())
