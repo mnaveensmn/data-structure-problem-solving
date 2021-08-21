@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="array.O01_CountingTripletsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-21T06:22:55" hostname="Naveens-MacBook-Pro.local" time="0.017">
+  <properties/>
+  <testcase name="testCountTripletMethod()" classname="array.O01_CountingTripletsTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
