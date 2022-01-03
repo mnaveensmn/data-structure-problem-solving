@@ -10,7 +10,7 @@ public class O03_NthFibonacciNumberTest {
     @Test
     public void shouldReturnNthFibonacciNumber() {
         O03_NthFibonacciNumber nthFibonacciNumber = new O03_NthFibonacciNumber();
-        int n = nthFibonacciNumber.fibonacci(5);
+        nthFibonacciNumber.fibonacci(5);
         assertTrue(true);
     }
 
