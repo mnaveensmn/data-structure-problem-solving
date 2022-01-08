@@ -3,7 +3,6 @@ package recursion;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class O04_PowerOf2Test {
     @Test
