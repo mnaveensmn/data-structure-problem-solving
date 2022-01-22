@@ -1,2 +1,17 @@
-package mathamatics;public class O06_TrailingZeros {
+package mathamatics;
+
+/**
+ * Trailing Zero of N! factorial
+ */
+public class O06_TrailingZeros {
+    public int getTrailingZeros(int n) {
+        if (n < 0) {
+            return -1;
+        }
+        int count = 0;
+        for (int i = 5; n / i >= 1; i *= 5) {
+            count += n / i;
+        }
+        return count;
+    }
 }
