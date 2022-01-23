@@ -9,11 +9,11 @@ public class O08_PermutationAndCombination {
     }
 
     public int permutation(int n, int r) {
-        return factorial.getFactorial(n) / factorial.getFactorial(n - r);
+        return factorial.factorial(n) / factorial.factorial(n - r);
     }
 
     public int combination(int n, int r) {
-        return factorial.getFactorial(n) / (factorial.getFactorial(r) * factorial.getFactorial(n - r));
+        return factorial.factorial(n) / (factorial.factorial(r) * factorial.factorial(n - r));
     }
 
 }
