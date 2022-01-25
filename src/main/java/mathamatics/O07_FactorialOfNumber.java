@@ -9,11 +9,12 @@ public class O07_FactorialOfNumber {
     //        }
     //        return n * factorial(n-1);
     //    }
+    //Redid - 1
     public int factorial(int n) {
-        int result = 1;
-        for (int i = 2; i <= n; i++) {
-            result = result * i;
-        }
-        return result;
+       int res = 1;
+       for(int i=2;i<=n;i++) {
+           res *=i;
+       }
+       return res;
     }
 }
