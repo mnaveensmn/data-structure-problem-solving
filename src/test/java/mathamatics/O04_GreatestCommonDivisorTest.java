@@ -7,13 +7,35 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class O04_GreatestCommonDivisorTest {
 
     @Test
-    public void shouldReturnGcdOfGivenTwoNumbers() {
+    public void shouldReturnGcdOfGivenTwoNumbersUsingNaiveApproach() {
         O04_GreatestCommonDivisor greatestCommonDivisor = new O04_GreatestCommonDivisor();
-        int actualGcd = greatestCommonDivisor.gcd(30, 42);
+        int actualGcd = greatestCommonDivisor.gcdNaiveSolution(30, 42);
         assertEquals(6, actualGcd);
-        actualGcd = greatestCommonDivisor.gcd(30, 36);
+        actualGcd = greatestCommonDivisor.gcdNaiveSolution(30, 36);
         assertEquals(6, actualGcd);
-        actualGcd = greatestCommonDivisor.gcd(42, 36);
+        actualGcd = greatestCommonDivisor.gcdNaiveSolution(42, 36);
+        assertEquals(6, actualGcd);
+    }
+
+    @Test
+    public void shouldReturnGcdOfGivenTwoNumbersUsingOptimizedEuclidean() {
+        O04_GreatestCommonDivisor greatestCommonDivisor = new O04_GreatestCommonDivisor();
+        int actualGcd = greatestCommonDivisor.optimizedEuclideanApproach(30, 42);
+        assertEquals(6, actualGcd);
+        actualGcd = greatestCommonDivisor.optimizedEuclideanApproach(30, 36);
+        assertEquals(6, actualGcd);
+        actualGcd = greatestCommonDivisor.optimizedEuclideanApproach(42, 36);
+        assertEquals(6, actualGcd);
+    }
+
+    @Test
+    public void shouldReturnGcdOfGivenTwoNumbersUsingEuclidean() {
+        O04_GreatestCommonDivisor greatestCommonDivisor = new O04_GreatestCommonDivisor();
+        int actualGcd = greatestCommonDivisor.euclideanApproach(30, 42);
+        assertEquals(6, actualGcd);
+        actualGcd = greatestCommonDivisor.euclideanApproach(30, 36);
+        assertEquals(6, actualGcd);
+        actualGcd = greatestCommonDivisor.euclideanApproach(42, 36);
         assertEquals(6, actualGcd);
     }
 
