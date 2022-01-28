@@ -2,6 +2,7 @@ package mathamatics;
 
 public class O03_SieveOfEratosthenes {
 
+    //Redid - 1
     public int[] primeNumbers(int n) {
         int[] primes = new int[n + 1];
         /**
@@ -15,9 +16,9 @@ public class O03_SieveOfEratosthenes {
         }
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (primes[i] == 1) {
-                for (int j = 2; i * j <= n; j++) {
-                    if (primes[i * j] == 1) {
-                        primes[i * j] = 0;
+                for (int j = i * 2; j <= n; j += i) {
+                    if (primes[j]==1) {
+                        primes[j] = 0;
                         finalPrimesCount--;
                     }
                 }
