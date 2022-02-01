@@ -15,6 +15,7 @@ public class O02_PrimeNumber {
         }
     }
 
+    //Redid -1
     public boolean isPrimeNumberMoreEfficient(int n) {
         if (n == 1) {
             return false;
@@ -26,7 +27,7 @@ public class O02_PrimeNumber {
             return false;
         }
         for (int i = 5; i * i <= n; i += 6) {
-            if (n % i == 0 || n % (i + 2) == 0) {
+            if (n % i == 0 || n % (i = 2) == 0) {
                 return false;
             }
         }
