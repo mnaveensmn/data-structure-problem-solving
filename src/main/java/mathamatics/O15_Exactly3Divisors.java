@@ -25,4 +25,23 @@ public class O15_Exactly3Divisors {
         }
         return threeDivisorNumber.stream().mapToInt(i -> i).toArray();
     }
+
+    public boolean isPrime(int n) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public int[] threeDivisorsWithO1AuxilliarySpace(int n) {
+        List<Integer> threeDivisorNumbers = new ArrayList<>();
+        for (int i = 2; i * i <= n; i++) {
+            if (isPrime(i)) {
+                threeDivisorNumbers.add(i * i);
+            }
+        }
+        return threeDivisorNumbers.stream().mapToInt(i -> i).toArray();
+    }
 }
