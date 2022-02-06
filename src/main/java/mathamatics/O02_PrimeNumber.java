@@ -15,7 +15,7 @@ public class O02_PrimeNumber {
         }
     }
 
-    //Redid -2
+    //Redid - 3
     public boolean isPrimeNumberMoreEfficient(int n) {
         if (n == 1 || n == 0) {
             return false;
