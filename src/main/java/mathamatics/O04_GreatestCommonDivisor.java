@@ -2,7 +2,7 @@ package mathamatics;
 
 public class O04_GreatestCommonDivisor {
 
-    //Redid - 1
+    //Redid - 2
     public int optimizedEuclideanApproach(int a, int b) {
         if (a == 0) {
             return b;
@@ -14,6 +14,7 @@ public class O04_GreatestCommonDivisor {
         return (a * b) / optimizedEuclideanApproach(a, b);
     }
 
+    //Redid - 1
     public int gcdNaiveSolution(int a, int b) {
         int res = Math.min(a, b);
         while (res > 1) {
