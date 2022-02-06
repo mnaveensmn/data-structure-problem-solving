@@ -2,13 +2,13 @@ package mathamatics;
 
 public class O09_PalindromeNumber {
 
-    //Redid - 3
+    //Redid - 4
     public boolean isPalindrome(int n) {
         int sum = 0;
         int temp = n;
         while (n > 0) {
-            int res = n % 10;
-            sum = (sum * 10) + res;
+            int r = n % 10;
+            sum = (sum * 10) + r;
             n = n / 10;
         }
         return temp == sum;
