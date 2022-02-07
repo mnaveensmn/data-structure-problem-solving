@@ -20,6 +20,7 @@ public class O05_PrimeFactors {
         return primeFactorList.stream().mapToInt(i -> i).toArray();
     }
 
+    //Redid - 1
     public int[] primeFactorMoreEfficientSolution(int n) {
         List<Integer> primeFactorList = new ArrayList<>();
         if (n <= 1) {
@@ -37,7 +38,7 @@ public class O05_PrimeFactors {
                 primeFactorList.add(3);
             }
         }
-        for (int i = 5; i * i <= n; i += 6) {
+        for (int i = 5; i <= Math.sqrt(n); i += 6) {
             if (n % i == 0) {
                 while (n % i == 0) {
                     n = n / i;
@@ -51,9 +52,11 @@ public class O05_PrimeFactors {
                 }
             }
         }
-        if (n > 3) {
+
+        if (n>3) {
             primeFactorList.add(n);
         }
+
         return primeFactorList.stream().mapToInt(i -> i).toArray();
     }
 
