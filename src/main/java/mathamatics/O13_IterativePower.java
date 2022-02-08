@@ -14,4 +14,20 @@ public class O13_IterativePower {
         }
         return res;
     }
+
+    public long modularExponentiation(long x, int n, long m) {
+        long res = 1;
+        while (n > 0) {
+            if (n % 2 != 0) {
+                res = modularMultiplicative(res,x,m);
+            }
+            x = modularMultiplicative(x,x,m);
+            n = n / 2;
+        }
+        return res;
+    }
+
+    public long modularMultiplicative(long a, long b, long m) {
+        return ((a % m) * (b % m)) % m;
+    }
 }
