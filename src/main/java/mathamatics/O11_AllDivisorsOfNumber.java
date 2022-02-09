@@ -5,6 +5,7 @@ import java.util.List;
 
 public class O11_AllDivisorsOfNumber {
 
+    //Redid - 1
     public int[] divisorOfNumberWithoutOrder(int n) {
         List<Integer> divisors = new ArrayList<>();
         for (int i = 1; i <= Math.sqrt(n); i++) {
