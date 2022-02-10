@@ -32,7 +32,6 @@ public class O11_AllDivisorsOfNumber {
                 divisors.add(n / i);
             }
         }
-        System.out.println(divisors.toString());
         return divisors.stream().mapToInt(j -> j).toArray();
     }
 }

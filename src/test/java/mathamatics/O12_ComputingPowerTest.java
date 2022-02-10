@@ -10,11 +10,11 @@ class O12_ComputingPowerTest {
     public void shouldComputeThePowerOfGivenNumber() {
         O12_ComputingPower computingPower = new O12_ComputingPower();
         int actualPower = computingPower.pow(2, 3);
-        assertEquals(actualPower, 8);
+        assertEquals(8, actualPower);
         actualPower = computingPower.pow(3, 3);
-        assertEquals(actualPower, 27);
+        assertEquals(27, actualPower);
         actualPower = computingPower.pow(4, 3);
-        assertEquals(actualPower, 64);
+        assertEquals(64, actualPower);
     }
 
 }

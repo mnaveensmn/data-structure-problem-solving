@@ -7,9 +7,9 @@ public class O12_ComputingPower {
         if (n == 0) {
             return 1;
         }
-        int temp = pow(x, n / 2);
+        int temp = pow(x, (n >> 1));
         temp = temp * temp;
-        if (n % 2 == 0) {
+        if ((n & 1) == 0) {
             return temp;
         } else {
             return temp * x;
