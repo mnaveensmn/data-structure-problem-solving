@@ -35,6 +35,7 @@ public class O15_Exactly3Divisors {
         return true;
     }
 
+    //redid - 1
     public int[] threeDivisorsWithO1AuxilliarySpace(int n) {
         List<Integer> threeDivisorNumbers = new ArrayList<>();
         for (int i = 2; i * i <= n; i++) {
