@@ -24,4 +24,12 @@ class O01_BitTacticsTest {
         assertEquals(5,actual);
     }
 
+    @Test
+    public void shouldToggleBitAtNthPositionInGivenNumber() {
+        int actual = bitTactics.toggleBit(24, 3);
+        assertEquals(16,actual);
+        actual = bitTactics.toggleBit(7, 1);
+        assertEquals(5,actual);
+    }
+
 }
