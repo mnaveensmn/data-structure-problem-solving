@@ -3,6 +3,7 @@ package bitwise;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class O01_BitTacticsTest {
 
@@ -30,6 +31,14 @@ class O01_BitTacticsTest {
         assertEquals(16,actual);
         actual = bitTactics.toggleBit(7, 1);
         assertEquals(5,actual);
+    }
+
+    @Test
+    public void shouldReturnTrueIfBitSetAtNthPositionInGivenNumber() {
+        boolean actual = bitTactics.isSetBitSet(24, 3);
+        assertTrue(actual);
+        actual = bitTactics.isSetBitSet(7, 1);
+        assertTrue(actual);
     }
 
 }

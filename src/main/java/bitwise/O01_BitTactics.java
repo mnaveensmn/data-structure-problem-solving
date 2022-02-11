@@ -26,4 +26,13 @@ public class O01_BitTactics {
         //Step 2: Perform XOR between n and leftShifted
         return (n ^ leftShifted);
     }
+
+    public boolean isSetBitSet(int n, int position) {
+        //Step 1: Left Shift 1 to given position
+        int leftShifted = 1 << position;
+        //Step 2: Perform AND operation on 'leftShifted' and 'n'
+        int andPerformed = n & leftShifted;
+        //Step 2: Check if andPerformed is equals to leftShifted;
+        return andPerformed == leftShifted;
+    }
 }
