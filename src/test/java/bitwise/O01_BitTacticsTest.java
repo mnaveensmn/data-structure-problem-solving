@@ -12,25 +12,25 @@ class O01_BitTacticsTest {
     @Test
     public void shouldSetBitAtNthPositionInGivenNumber() {
         int actual = bitTactics.setBit(16, 3);
-        assertEquals(24,actual);
+        assertEquals(24, actual);
         actual = bitTactics.setBit(5, 1);
-        assertEquals(7,actual);
+        assertEquals(7, actual);
     }
 
     @Test
     public void shouldUnSetBitAtNthPositionInGivenNumber() {
         int actual = bitTactics.unSetBit(24, 3);
-        assertEquals(16,actual);
+        assertEquals(16, actual);
         actual = bitTactics.unSetBit(7, 1);
-        assertEquals(5,actual);
+        assertEquals(5, actual);
     }
 
     @Test
     public void shouldToggleBitAtNthPositionInGivenNumber() {
         int actual = bitTactics.toggleBit(24, 3);
-        assertEquals(16,actual);
+        assertEquals(16, actual);
         actual = bitTactics.toggleBit(7, 1);
-        assertEquals(5,actual);
+        assertEquals(5, actual);
     }
 
     @Test
@@ -39,6 +39,23 @@ class O01_BitTacticsTest {
         assertTrue(actual);
         actual = bitTactics.isSetBitSet(7, 1);
         assertTrue(actual);
+    }
+
+    @Test
+    public void shouldReturnDivisionOfTwoOfGivenNumber() {
+        int actual = bitTactics.divideByTwo(18);
+        assertEquals(9, actual);
+        actual = bitTactics.divideByTwo(36);
+        assertEquals(18, actual);
+    }
+
+    @Test
+    public void shouldReturnMultiplicationOfTwoOfGivenNumber() {
+        int actual = bitTactics.multiplyByTwo(18);
+        assertEquals(36, actual);
+        actual = bitTactics.multiplyByTwo(9);
+        assertEquals(18, actual);
+
     }
 
 }

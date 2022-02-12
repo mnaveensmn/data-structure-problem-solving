@@ -35,4 +35,12 @@ public class O01_BitTactics {
         //Step 2: Check if andPerformed is equals to leftShifted;
         return andPerformed == leftShifted;
     }
+
+    public int divideByTwo(int n) {
+        return n >> 1;
+    }
+
+    public int multiplyByTwo(int n) {
+        return n << 1;
+    }
 }
