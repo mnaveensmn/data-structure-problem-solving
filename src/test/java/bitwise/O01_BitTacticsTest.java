@@ -55,7 +55,14 @@ class O01_BitTacticsTest {
         assertEquals(36, actual);
         actual = bitTactics.multiplyByTwo(9);
         assertEquals(18, actual);
+    }
 
+    @Test
+    public void shouldReturnLogBaseTwoOfGivenNumber() {
+        int actual = bitTactics.logBaseTwo(16);
+        assertEquals(4, actual);
+        actual = bitTactics.logBaseTwo(128);
+        assertEquals(7, actual);
     }
 
 }

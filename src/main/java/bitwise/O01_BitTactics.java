@@ -43,4 +43,12 @@ public class O01_BitTactics {
     public int multiplyByTwo(int n) {
         return n << 1;
     }
+
+    public int logBaseTwo(int n) {
+        int res = 0;
+        while ((n >>= 1) != 0) {
+            res++;
+        }
+        return res;
+    }
 }
