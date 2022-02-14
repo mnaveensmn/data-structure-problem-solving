@@ -2,8 +2,7 @@ package bitwise;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class O01_BitTacticsTest {
 
@@ -63,6 +62,14 @@ class O01_BitTacticsTest {
         assertEquals(4, actual);
         actual = bitTactics.logBaseTwo(128);
         assertEquals(7, actual);
+    }
+
+    @Test
+    public void shouldSwapTheNumbersInGivenNumber() {
+        int[] actual = bitTactics.swap(new int[]{1, 2});
+        assertArrayEquals(new int[]{2, 1}, actual);
+        actual = bitTactics.swap(new int[]{3, 4});
+        assertArrayEquals(new int[]{4, 3}, actual);
     }
 
 }
