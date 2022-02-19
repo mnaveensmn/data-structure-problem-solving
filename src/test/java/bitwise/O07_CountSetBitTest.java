@@ -28,5 +28,16 @@ class O07_CountSetBitTest {
         assertEquals(2, actual);
     }
 
+    @Test
+    public void shouldCountOfSetBitUsingLookUpTableMethod() {
+        O07_CountSetBit countSetBit = new O07_CountSetBit();
+        int actual = countSetBit.lookUpTableMethod(7);
+        assertEquals(3, actual);
+        actual = countSetBit.lookUpTableMethod(5);
+        assertEquals(2, actual);
+        actual = countSetBit.lookUpTableMethod(40);
+        assertEquals(2, actual);
+    }
+
 
 }
