@@ -19,4 +19,12 @@ public class O08_OneOddOccurring {
         }
         return -1;
     }
+
+    public int efficientSolution(int[] a) {
+        int res =0;
+        for (int element: a) {
+            res = res ^ element;
+        }
+        return res;
+    }
 }
