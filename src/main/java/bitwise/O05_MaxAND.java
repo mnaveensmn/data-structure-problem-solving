@@ -2,7 +2,7 @@ package bitwise;
 
 public class O05_MaxAND {
 
-    //redid - 1
+    //redid - 2
     private int countBit(int[] a, int pattern) {
         int count = 0;
         for (int i : a) {
@@ -15,8 +15,8 @@ public class O05_MaxAND {
 
     public int findMaxANDValue(int[] a) {
         int res = 0, count;
-        for (int bit = 31; bit >= 0; bit--) {
-            int pattern = res | (1 << bit);
+        for (int bits = 31; bits >= 0; bits--) {
+            int pattern = res | (1 << bits);
             count = countBit(a, pattern);
             if (count >= 2) {
                 res |= pattern;
