@@ -12,11 +12,11 @@ public class O09_MissingOccurrence {
         int xorOfArr = 0;
         int n = a.length;
         for (int i = 1; i <= n + 1; i++) {
-            if (i <= n) {
-                xorOfArr ^= a[i - 1];
-            }
             xorOfSeq ^= i;
+            if (i <= n) {
+                xorOfArr ^= a[i-1];
+            }
         }
-        return xorOfSeq ^ xorOfArr;
+        return xorOfArr ^ xorOfSeq;
     }
 }
