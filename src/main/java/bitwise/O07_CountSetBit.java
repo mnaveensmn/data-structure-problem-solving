@@ -2,6 +2,7 @@ package bitwise;
 
 public class O07_CountSetBit {
 
+    //redid - 1
     public int naiveSolution(int n) {
         int res = 0;
         while (n > 0) {
@@ -11,10 +12,11 @@ public class O07_CountSetBit {
         return res;
     }
 
+    //redid - 1
     public int brianKerringamsAlgorithm(int n) {
-        int res = 0;
-        while (n > 0) {
-            n = n & (n - 1);
+        int res =0;
+        while (n>0) {
+            n = n&(n-1);
             res++;
         }
         return res;
@@ -27,12 +29,12 @@ public class O07_CountSetBit {
         for (int i = 1; i < 256; i++) {
             table[i] = (i & 1) + table[i / 2];
         }
-        res= table[n & 0xff];
-        n = n>>8;
+        res = table[n & 0xff];
+        n = n >> 8;
         res += table[n & 0xff];
-        n = n>>8;
+        n = n >> 8;
         res += table[n & 0xff];
-        n = n>>8;
+        n = n >> 8;
         res += table[n & 0xff];
         return res;
     }
