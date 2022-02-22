@@ -20,10 +20,11 @@ public class O08_OneOddOccurring {
         return -1;
     }
 
+    //redid - 1
     public int efficientSolution(int[] a) {
-        int res =0;
-        for (int element: a) {
-            res = res ^ element;
+        int res = 0;
+        for (int element : a) {
+            res ^= element;
         }
         return res;
     }
