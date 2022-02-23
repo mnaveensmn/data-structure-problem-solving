@@ -10,7 +10,7 @@ public class O10_TwoOddOccurring {
         for (int element : a) {
             xor ^= element;
         }
-        int lastSetBit = xor & (~(xor - 1));
+        int lastSetBit = xor & (-xor);
         for (int element : a) {
             if ((element & lastSetBit) != 0) {
                 res[0] ^= element;
