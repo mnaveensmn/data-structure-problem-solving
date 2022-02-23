@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class O10_TwoOddOccurring {
 
+    //redid - 1
     public int[] efficientSolution(int[] a) {
         int[] res = new int[2];
         int xor = 0;
