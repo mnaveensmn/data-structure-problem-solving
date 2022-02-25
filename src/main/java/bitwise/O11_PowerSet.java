@@ -1,12 +1,14 @@
 package bitwise;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class O11_PowerSet {
 
+    //redid - 1
     public String[] powerSetOfString(String str) {
-        List<String> result = new ArrayList<>();
+        List<String> powerSet = new ArrayList<>();
         int n = str.length();
         int powSize = (int) Math.pow(2, n);
         for (int counter = 0; counter < powSize; counter++) {
@@ -16,9 +18,8 @@ public class O11_PowerSet {
                     stringBuilder.append(str.charAt(j));
                 }
             }
-            result.add(stringBuilder.toString());
+            powerSet.add(stringBuilder.toString());
         }
-        System.out.println(result);
-        return result.toArray(new String[0]);
+        return powerSet.toArray(new String[0]);
     }
 }
