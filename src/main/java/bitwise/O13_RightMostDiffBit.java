@@ -2,6 +2,7 @@ package bitwise;
 
 public class O13_RightMostDiffBit {
 
+    //redid - 1
     public int rightMostDiffBitPosition(int m, int n) {
         if (m == n) {
             return -1;
