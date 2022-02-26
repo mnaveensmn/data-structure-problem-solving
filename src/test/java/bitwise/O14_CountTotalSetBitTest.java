@@ -16,4 +16,15 @@ class O14_CountTotalSetBitTest {
         Assertions.assertEquals(12,actual);
     }
 
+    @Test
+    public void shouldReturnCountOfSetBitInAllNumbersUsingVerticalFashionSolution() {
+        O14_CountTotalSetBit countTotalSetBit = new O14_CountTotalSetBit();
+        int actual = countTotalSetBit.verticalFashionSolution(3);
+        Assertions.assertEquals(4, actual);
+        actual = countTotalSetBit.verticalFashionSolution(6);
+        Assertions.assertEquals(9, actual);
+        actual = countTotalSetBit.verticalFashionSolution(7);
+        Assertions.assertEquals(12, actual);
+    }
+
 }

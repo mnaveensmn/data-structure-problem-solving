@@ -18,4 +18,26 @@ public class O14_CountTotalSetBit {
         }
         return count;
     }
+
+    public int verticalFashionSolution(int n) {
+        int i = 0;
+        int ans = 0;
+        while ((1 << i) <= n) {
+            int change = 1 << i;
+            boolean isBitSetVertically = false;
+            for (int j = 0; j <= n; j++) {
+                if (isBitSetVertically) {
+                    ans++;
+                }
+                if (change == 1) {
+                    isBitSetVertically = !isBitSetVertically;
+                    change = 1 << i;
+                } else {
+                    change--;
+                }
+            }
+            i++;
+        }
+        return ans;
+    }
 }
