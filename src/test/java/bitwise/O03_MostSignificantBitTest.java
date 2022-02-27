@@ -13,6 +13,8 @@ class O03_MostSignificantBitTest {
         assertEquals(16, actual);
         actual = mostSignificantBit.msb(10);
         assertEquals(8, actual);
+        actual = mostSignificantBit.msb(0);
+        assertEquals(0, actual);
     }
 
 }
