@@ -1,7 +1,6 @@
 package bitwise;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class O11_PowerSet {
