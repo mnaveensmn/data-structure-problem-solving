@@ -2,7 +2,8 @@ package bitwise;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class O02_PowerOfTwoTest {
 
@@ -26,6 +27,8 @@ class O02_PowerOfTwoTest {
         assertFalse(actual);
         actual = powerOfTwo.isPowerOfTwo(256);
         assertTrue(actual);
+        actual = powerOfTwo.isPowerOfTwo(0);
+        assertFalse(actual);
     }
 
 }
