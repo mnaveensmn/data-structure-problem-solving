@@ -7,5 +7,8 @@ public class Index {
         System.out.println(y);
         int x = 1;
         System.out.println(~x);
+
+        int a = 8;
+        System.out.println(Math.floor(Math.log(11) / Math.log(2)));
     }
 }

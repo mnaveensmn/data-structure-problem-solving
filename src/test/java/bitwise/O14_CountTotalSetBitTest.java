@@ -27,4 +27,15 @@ class O14_CountTotalSetBitTest {
         Assertions.assertEquals(12, actual);
     }
 
+    @Test
+    public void shouldReturnCountOfSetBitInAllNumbersUsingEfficientSolution() {
+        O14_CountTotalSetBit countTotalSetBit = new O14_CountTotalSetBit();
+        int actual = countTotalSetBit.efficientSolution(3);
+        Assertions.assertEquals(4, actual);
+        actual = countTotalSetBit.efficientSolution(6);
+        Assertions.assertEquals(9, actual);
+        actual = countTotalSetBit.efficientSolution(7);
+        Assertions.assertEquals(12, actual);
+    }
+
 }

@@ -40,4 +40,19 @@ public class O14_CountTotalSetBit {
         }
         return ans;
     }
+
+    private int getLeftMostSetBitPosition(int n) {
+        return (int) Math.floor(Math.log(n) / Math.log(2));
+    }
+
+    public int efficientSolution(int n) {
+        int count = 0;
+        int x = getLeftMostSetBitPosition(n);
+        while (n > 0) {
+            count += (x * (1 << x) / 2) + (n - (1 << x)) + 1;
+            n = n & (~(1 << x));
+            x = getLeftMostSetBitPosition(n);
+        }
+        return count;
+    }
 }
