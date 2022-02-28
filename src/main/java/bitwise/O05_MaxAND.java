@@ -2,11 +2,11 @@ package bitwise;
 
 public class O05_MaxAND {
 
-    //redid - 2
+    //redid - 3
     private int countBit(int[] a, int pattern) {
         int count = 0;
-        for (int i : a) {
-            if ((pattern & i) == pattern) {
+        for (int element : a) {
+            if ((pattern & element) == pattern) {
                 count++;
             }
         }
