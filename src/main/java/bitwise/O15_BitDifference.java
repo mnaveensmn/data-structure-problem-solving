@@ -1,6 +1,7 @@
 package bitwise;
 
 public class O15_BitDifference {
+
     public int countBitDifference(int a, int b) {
         int xor = a ^ b;
         int count = 0;
