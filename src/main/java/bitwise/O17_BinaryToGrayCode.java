@@ -2,6 +2,7 @@ package bitwise;
 
 public class O17_BinaryToGrayCode {
 
+    // redid - 1
     public int convert(int n) {
         if (n == 0) {
             return 0;
@@ -10,6 +11,6 @@ public class O17_BinaryToGrayCode {
         int msb = 1 << msbPosition;
         int rightShifted = n >> 1;
         int xor = n ^ rightShifted;
-        return xor | msb;
+        return msb | xor;
     }
 }
