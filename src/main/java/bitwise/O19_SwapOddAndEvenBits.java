@@ -2,6 +2,7 @@ package bitwise;
 
 public class O19_SwapOddAndEvenBits {
 
+    //redid - 1
     public int swap(int n) {
         int oddBits = n & 0xAAAAAAAA;
         int rsOddBits = oddBits >> 1;
