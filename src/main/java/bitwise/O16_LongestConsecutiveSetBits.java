@@ -2,7 +2,7 @@ package bitwise;
 
 public class O16_LongestConsecutiveSetBits {
 
-    //redid - 1
+    //redid - 2
     public int countLongestConsecutiveSetBits(int n) {
         int count = 0;
         int longestSetBit = 0;
