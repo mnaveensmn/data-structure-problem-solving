@@ -2,20 +2,21 @@ package bitwise;
 
 public class O16_LongestConsecutiveSetBits {
 
+    //redid - 1
     public int countLongestConsecutiveSetBits(int n) {
         int count = 0;
-        int longestCount = 0;
+        int longestSetBit = 0;
         while (n > 0) {
             if ((n & 1) != 0) {
                 count++;
             } else {
                 count = 0;
             }
-            if (count > longestCount) {
-                longestCount = count;
+            if (count > longestSetBit) {
+                longestSetBit = count;
             }
-            n>>=1;
+            n >>= 1;
         }
-        return longestCount;
+        return longestSetBit;
     }
 }
