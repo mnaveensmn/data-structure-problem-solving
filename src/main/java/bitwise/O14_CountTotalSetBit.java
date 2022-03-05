@@ -45,7 +45,7 @@ public class O14_CountTotalSetBit {
         return (int) Math.floor(Math.log(n) / Math.log(2));
     }
 
-    // redid - 1
+    // redid - 2
     public int efficientSolution(int n) {
         int count = 0;
         int x = getLeftMostSetBitPosition(n);
