@@ -5,7 +5,7 @@ import java.util.List;
 
 public class O11_PowerSet {
 
-    //redid - 1
+    //redid - 2
     public String[] powerSetOfString(String str) {
         List<String> powerSet = new ArrayList<>();
         int n = str.length();
