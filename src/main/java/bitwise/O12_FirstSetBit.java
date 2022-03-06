@@ -7,7 +7,7 @@ package bitwise;
  */
 public class O12_FirstSetBit {
 
-    //redid - 1
+    //redid - 2
     public int firstBitPosition(int n) {
         if (n == 0) {
             return 0;
