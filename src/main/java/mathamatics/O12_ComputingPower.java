@@ -2,7 +2,7 @@ package mathamatics;
 
 public class O12_ComputingPower {
 
-    //Redid - 2
+    //Redid - 3
     public int pow(int x, int n) {
         if (n == 0) {
             return 1;
