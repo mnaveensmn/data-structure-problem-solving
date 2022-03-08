@@ -2,6 +2,7 @@ package recursion;
 
 public class O04_PowerOf2 {
 
+    //redid - 1
     public int powerOf2(int n) {
         if (n < 1) {
             return 0;
@@ -10,8 +11,6 @@ public class O04_PowerOf2 {
             return 1;
         }
         int prev = powerOf2(n / 2);
-        int curr = prev * 2;
-        System.out.println(curr);
-        return curr;
+        return prev * 2;
     }
 }
