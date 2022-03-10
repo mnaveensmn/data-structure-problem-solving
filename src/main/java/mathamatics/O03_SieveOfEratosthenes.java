@@ -17,13 +17,14 @@ public class O03_SieveOfEratosthenes {
                 }
             }
         }
-
         List<Integer> primeNumbers = new ArrayList<>();
         for (int i = 2; i < primes.length; i++) {
             if (primes[i]) {
                 primeNumbers.add(i);
             }
         }
+
         return primeNumbers.stream().mapToInt(i -> i).toArray();
     }
+
 }
