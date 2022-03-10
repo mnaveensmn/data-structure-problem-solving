@@ -2,10 +2,11 @@ package array;
 
 public class O02_ReverseArray {
 
+    //Redid - 1
     public char[] reverse(char[] array) {
-        for (int arrIndex = 0; arrIndex < array.length / 2; arrIndex++) {
-            int end = array.length - 1 - arrIndex;
-            swap(array, arrIndex, end);
+        int n = array.length;
+        for (int i=0;i<n/2;i++) {
+            swap(array,i,n-1-i);
         }
         return array;
     }
