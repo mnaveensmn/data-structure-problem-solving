@@ -37,12 +37,13 @@ public class O15_Exactly3Divisors {
 
     //redid - 1
     public int[] threeDivisorsWithO1AuxilliarySpace(int n) {
-        List<Integer> threeDivisorNumbers = new ArrayList<>();
+        List<Integer> threeDivisorNumber = new ArrayList<>();
         for (int i = 2; i * i <= n; i++) {
             if (isPrime(i)) {
-                threeDivisorNumbers.add(i * i);
+                threeDivisorNumber.add(i * i);
             }
         }
-        return threeDivisorNumbers.stream().mapToInt(i -> i).toArray();
+        return threeDivisorNumber.stream().mapToInt(i -> i).toArray();
+
     }
 }
