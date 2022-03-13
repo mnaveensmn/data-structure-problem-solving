@@ -23,13 +23,11 @@ public class O20_LongestCommonSum {
     }
 
     public int auxiliarySpaceSolution(int[] aArr, int[] bArr) {
-        int maxLen = 0;
         int n = aArr.length;
+        int maxLen = 0;
         int aSum = 0, bSum = 0;
         int[] diff = new int[2 * n + 1];
-
         Arrays.fill(diff, -1);
-
         for (int i = 0; i < n; i++) {
             aSum += aArr[i];
             bSum += bArr[i];
