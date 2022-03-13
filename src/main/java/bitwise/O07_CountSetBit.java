@@ -27,7 +27,7 @@ public class O07_CountSetBit {
         int res = 0;
         int[] table = new int[256];
         table[0] = 0;
-        for (int i = 1; i < 256; i++) {
+        for (int i = 1; i < table.length; i++) {
             table[i] = (i & 1) + table[i / 2];
         }
         res += table[n & 0xff];
