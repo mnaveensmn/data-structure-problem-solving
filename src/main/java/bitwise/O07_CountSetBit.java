@@ -12,7 +12,7 @@ public class O07_CountSetBit {
         return res;
     }
 
-    //redid - 1
+    //redid - 2
     public int brianKerringamsAlgorithm(int n) {
         int res = 0;
         while (n > 0) {
