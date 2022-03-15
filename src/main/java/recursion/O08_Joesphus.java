@@ -9,4 +9,8 @@ public class O08_Joesphus {
             return (survivingPosition(n - 1, k) + (k - 1)) % n + 1;
         }
     }
+
+    public void naiveSolution(int n, int k) {
+
+    }
 }
