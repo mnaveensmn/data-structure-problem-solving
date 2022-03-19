@@ -2,7 +2,7 @@ package recursion;
 
 public class O01_PermutationOfString {
 
-    //Redid - 2
+    //Redid - 3
     public void permute(String str, int l, int r) {
         if (l == r) {
             System.out.println(str);
