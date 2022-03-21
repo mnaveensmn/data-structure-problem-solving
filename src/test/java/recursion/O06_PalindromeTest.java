@@ -16,6 +16,5 @@ class O06_PalindromeTest {
         Assertions.assertTrue(actual);
         actual = palindrome.isPalindrome("abcdba");
         Assertions.assertFalse(actual);
-
     }
 }

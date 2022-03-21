@@ -6,6 +6,7 @@ public class O06_Palindrome {
         return isPalindrome(str.toCharArray(), 0, str.length() - 1);
     }
 
+    //redid - 1
     public boolean isPalindrome(char[] str, int start, int end) {
         if (start == end) {
             return true;
