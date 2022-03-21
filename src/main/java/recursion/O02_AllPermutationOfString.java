@@ -16,5 +16,4 @@ public class O02_AllPermutationOfString {
             }
         }
     }
-
 }

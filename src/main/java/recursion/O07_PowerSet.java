@@ -11,10 +11,10 @@ public class O07_PowerSet {
         return powerSet.toArray(new String[0]);
     }
 
-    //redid - 1
+    //redid - 2
     public void powerSetOfString(String str, int index, String currString, List<String> powerSet) {
         if (index == str.length()) {
-            powerSet.add(currString);
+            powerSet.add(str);
             return;
         }
         powerSetOfString(str, index + 1, currString + str.charAt(index), powerSet);
