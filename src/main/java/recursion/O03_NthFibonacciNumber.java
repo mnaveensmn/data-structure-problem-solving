@@ -2,6 +2,8 @@ package recursion;
 
 public class O03_NthFibonacciNumber {
 
+    //redid -1
+
     /**
      * Finding nth fibonacci number
      *
@@ -9,10 +11,10 @@ public class O03_NthFibonacciNumber {
      * @return
      */
     public int fibonacci(int n) {
-        System.out.println(n);
         if (n <= 0) {
             return 0;
-        } else if (n == 1) {
+        }
+        if (n == 1) {
             return 1;
         }
         return fibonacci(n - 1) + fibonacci(n - 2);
