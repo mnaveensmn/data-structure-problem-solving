@@ -13,6 +13,6 @@ public class O09_DecimalToBinary {
             return;
         }
         convert(n / 2, stringBuilder);
-        stringBuilder.append(n % 2);
+        stringBuilder.append(n / 2);
     }
 }
