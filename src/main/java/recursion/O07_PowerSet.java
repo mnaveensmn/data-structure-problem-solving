@@ -11,9 +11,9 @@ public class O07_PowerSet {
         return powerSet.toArray(new String[0]);
     }
 
-    //redid - 2
+    //redid - 3
     public void powerSetOfString(String str, int index, String currString, List<String> powerSet) {
-        if (index == str.length()) {
+        if (str.length() == index) {
             powerSet.add(currString);
             return;
         }
