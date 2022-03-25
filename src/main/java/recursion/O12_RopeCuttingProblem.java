@@ -2,6 +2,7 @@ package recursion;
 
 public class O12_RopeCuttingProblem {
 
+    //redid - 1
     public int maxPieces(int n, int a, int b, int c) {
         if (n == 0) {
             return 0;
@@ -11,7 +12,6 @@ public class O12_RopeCuttingProblem {
         }
         int res = Math.max(maxPieces(n - a, a, b, c), maxPieces(n - b, a, b, c));
         res = Math.max(res, maxPieces(n - c, a, b, c));
-
         if (res == -1) {
             return -1;
         }
