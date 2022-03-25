@@ -8,11 +8,12 @@ public class O09_DecimalToBinary {
         return stringBuilder.toString();
     }
 
+    //redid - 1
     private void convert(int n, StringBuilder stringBuilder) {
         if (n == 0) {
             return;
         }
         convert(n / 2, stringBuilder);
-        stringBuilder.append(n / 2);
+        stringBuilder.append(n % 2);
     }
 }
