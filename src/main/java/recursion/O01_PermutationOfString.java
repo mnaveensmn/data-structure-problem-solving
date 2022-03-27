@@ -9,9 +9,9 @@ public class O01_PermutationOfString {
             return;
         }
         for (int i = l; i <= r; i++) {
-            str = swap(str, i, r);
+            str = swap(str, l, i);
             permute(str, l + 1, r);
-            str = swap(str, i, r);
+            str = swap(str, l, i);
         }
     }
 
