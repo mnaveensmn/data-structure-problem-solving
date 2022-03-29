@@ -6,6 +6,7 @@ public class O05_RecursiveSearch {
         return searchRecursively(arr, x, 0, arr.length - 1);
     }
 
+    //redid -1
     public boolean searchRecursively(int[] arr, int x, int l, int r) {
         if (l > r) {
             return false;
