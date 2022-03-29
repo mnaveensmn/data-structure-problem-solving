@@ -8,8 +8,8 @@ public class O13_TowerOfHanoi {
             System.out.println(a + " to " + c);
             return;
         }
-        TOH(n, a, c, b);
+        TOH(n-1, a, c, b);
         System.out.println(a + " to " + c);
-        TOH(n, b, a, c);
+        TOH(n-1, b, a, c);
     }
 }
