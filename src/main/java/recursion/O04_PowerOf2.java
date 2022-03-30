@@ -2,7 +2,7 @@ package recursion;
 
 public class O04_PowerOf2 {
 
-    //redid - 1
+    //redid - 2
     public int powerOf2(int n) {
         if (n < 1) {
             return 0;
