@@ -2,7 +2,7 @@ package recursion;
 
 public class O14_SubsetSum {
 
-    //redid -1
+    //redid -2
     public int subsetSum(int[] arr, int n, int sum) {
         if (n == 0) {
             return sum == 0 ? 1 : 0;
