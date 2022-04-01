@@ -22,5 +22,12 @@ public class Index {
         int arr[] = {9, 12, 2, 11, 2, 2, 10, 9, 12, 10, 9, 11, 2};
         System.out.println(fun(arr));
         //System.out.println(!(0&0));
+
+        int[][] array = new int[6][5];
+        System.out.println("Multi dimensional array length => " + array.length);
+
+        String s = "abc";
+        String sCopy = String.copyValueOf(s.toCharArray());
+        System.out.println(sCopy);
     }
 }
