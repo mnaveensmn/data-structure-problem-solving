@@ -30,13 +30,14 @@ public class O16_PossibleWordsFromPhoneDigits {
         return possibleWords(numbers, numbers.length, 0, "");
     }
 
+    //redid - 1
     public List<String> possibleWords(int[] numbers, int len, int index, String str) {
         if (len == index) {
             return new ArrayList<>(Collections.singleton(str));
         }
         List<String> possibleWords = new ArrayList<>();
-        Character[] numChar = numCharMap[numbers[index]];
-        for (Character character : numChar) {
+        Character[] characters = numCharMap[numbers[index]];
+        for (Character character : characters) {
             possibleWords.addAll(possibleWords(numbers, len, index + 1, str + character));
         }
         return possibleWords;
