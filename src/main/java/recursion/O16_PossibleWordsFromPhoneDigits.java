@@ -30,7 +30,7 @@ public class O16_PossibleWordsFromPhoneDigits {
         return possibleWords(numbers, numbers.length, 0, "");
     }
 
-    //redid - 1
+    //redid - 2
     public List<String> possibleWords(int[] numbers, int len, int index, String str) {
         if (len == index) {
             return new ArrayList<>(Collections.singleton(str));
