@@ -6,7 +6,7 @@ public class O15_LuckyNumber {
         return isLuckyNumber(n, 2);
     }
 
-    //redid -1
+    //redid -2
     private boolean isLuckyNumber(int position, int iteration) {
         if (position < iteration) {
             return true;
