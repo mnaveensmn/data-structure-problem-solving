@@ -2,7 +2,7 @@ package recursion;
 
 public class O11_SumOfDigits {
 
-    //redid - 1
+    //redid - 3
     public int sum(int n) {
         if (n == 0) {
             return 0;
