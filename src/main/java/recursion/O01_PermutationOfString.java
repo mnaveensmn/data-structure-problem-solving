@@ -2,11 +2,10 @@ package recursion;
 
 public class O01_PermutationOfString {
 
-    //Redid - 5
+    //Redid - 6
     public void permute(String str, int l, int r) {
         if (l == r) {
             System.out.println(str);
-            return;
         }
         for (int i = l; i <= r; i++) {
             str = swap(str, l, i);
