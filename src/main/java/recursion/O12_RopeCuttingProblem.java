@@ -2,7 +2,7 @@ package recursion;
 
 public class O12_RopeCuttingProblem {
 
-    //redid - 1
+    //redid - 2
     public int maxPieces(int n, int a, int b, int c) {
         if (n == 0) {
             return 0;
