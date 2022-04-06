@@ -33,9 +33,39 @@ public class O03_ArrayRotation {
             arr[n - 1] = temp;
         }
         for (int i : arr) {
-            System.out.print(i+" ");
+            System.out.print(i + " ");
         }
         System.out.println();
         return arr;
+    }
+
+    public int[] rotateUsingJugglingAlgorithm(int[] arr, int d) {
+        int n = arr.length;
+        int i, j, k, temp;
+        int gcd = gcd(n, d);
+        for (i = 0; i < gcd; i++) {
+            temp = arr[i];
+            j = i;
+            while (true) {
+                k = j + d;
+                if (k >= n) {
+                    k = k - n;
+                }
+                if (k == i) {
+                    break;
+                }
+                arr[j] = arr[k];
+                j = k;
+            }
+            arr[j] = temp;
+        }
+        return arr;
+    }
+
+    private int gcd(int a, int b) {
+        if (a == 0) {
+            return b;
+        }
+        return gcd(b % a, a);
     }
 }
