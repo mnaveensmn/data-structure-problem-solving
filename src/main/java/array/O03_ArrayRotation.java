@@ -32,10 +32,6 @@ public class O03_ArrayRotation {
             }
             arr[n - 1] = temp;
         }
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
         return arr;
     }
 

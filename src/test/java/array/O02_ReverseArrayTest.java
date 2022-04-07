@@ -12,28 +12,28 @@ public class O02_ReverseArrayTest {
     public void shouldPerformReverseOperationForPassedArray() {
         char[] passedArray = new char[]{'a', 'b', 'c', 'd'};
         char[] expectedArray = new char[]{'d', 'c', 'b', 'a'};
-        char[] actualArray = reverseArray.reverse(passedArray);
-        assertArrayEquals(expectedArray, actualArray);
+        reverseArray.reverse(passedArray,0,passedArray.length-1);
+        assertArrayEquals(expectedArray, passedArray);
     }
 
     @Test
     public void shouldPerformReverseOperationWhenArrayLengthAsOdd() {
         char[] passedArray = new char[]{'a', 'b', 'c'};
         char[] expectedArray = new char[]{'c', 'b', 'a'};
-        char[] actualArray = reverseArray.reverse(passedArray);
-        assertArrayEquals(expectedArray, actualArray);
+        reverseArray.reverse(passedArray, 0, passedArray.length - 1);
+        assertArrayEquals(expectedArray, passedArray);
     }
 
     @Test
     public void shouldReverseForEmptyAndSingleArray() {
         char[] passedArray = new char[]{};
         char[] expectedArray = new char[]{};
-        char[] actualArray = reverseArray.reverse(passedArray);
-        assertArrayEquals(expectedArray, actualArray);
+        reverseArray.reverse(passedArray, 0, passedArray.length - 1);
+        assertArrayEquals(expectedArray, passedArray);
         passedArray = new char[]{'a'};
         expectedArray = new char[]{'a'};
-        actualArray = reverseArray.reverse(passedArray);
-        assertArrayEquals(expectedArray, actualArray);
+        reverseArray.reverse(passedArray, 0, passedArray.length - 1);
+        assertArrayEquals(expectedArray, passedArray);
     }
 
 
