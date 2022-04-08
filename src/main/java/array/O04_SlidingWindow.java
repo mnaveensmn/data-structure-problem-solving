@@ -10,24 +10,25 @@ package array;
  */
 public class O04_SlidingWindow {
 
+    //redid - 1
     public int maxSumOfKElements(int[] arr, int k) {
         int windowSum = 0, i;
         int n = arr.length;
         int maxSum = Integer.MIN_VALUE;
-        if (k > arr.length) {
+        if (k > n) {
             return maxSum;
         }
         for (i = 0; i < k; i++) {
             windowSum += arr[i];
         }
-        maxSum = windowSum;
+        int maxWindowSum = windowSum;
         for (; i < n; i++) {
             int currWindowFirstIndex = i - k;
             windowSum = windowSum - arr[currWindowFirstIndex] + arr[i];
-            if (windowSum > maxSum) {
-                maxSum = windowSum;
+            if (windowSum > maxWindowSum) {
+                maxWindowSum = windowSum;
             }
         }
-        return maxSum;
+        return maxWindowSum;
     }
 }

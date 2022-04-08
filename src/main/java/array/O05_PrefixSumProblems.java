@@ -24,9 +24,9 @@ public class O05_PrefixSumProblems {
     public int maxSumAfterMAdditionOfGivenRange(int arraySize, int numberToBeAdded, int m, int[] start, int[] end) {
         int[] additionArray = new int[arraySize];
         for (int i = 0; i < m; i++) {
-            additionArray[start[i]] = additionArray[start[i]] + numberToBeAdded;
+            additionArray[start[i]] += numberToBeAdded;
             if (end[i] < (arraySize - 1)) {
-                additionArray[end[i] + 1] = additionArray[end[i] + 1] + (-numberToBeAdded);
+                additionArray[end[i] + 1] += (-numberToBeAdded);
             }
         }
         int[] prefixSum = prefixSum(additionArray);
