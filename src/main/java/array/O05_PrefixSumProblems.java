@@ -20,4 +20,22 @@ public class O05_PrefixSumProblems {
             return prefixSum[end] - prefixSum[start - 1];
         }
     }
+
+    public int maxSumAfterMAdditionOfGivenRange(int arraySize, int numberToBeAdded, int m, int[] start, int[] end) {
+        int[] additionArray = new int[arraySize];
+        for (int i = 0; i < m; i++) {
+            additionArray[start[i]] = additionArray[start[i]] + numberToBeAdded;
+            if (end[i] < (arraySize - 1)) {
+                additionArray[end[i] + 1] = additionArray[end[i] + 1] + (-numberToBeAdded);
+            }
+        }
+        int[] prefixSum = prefixSum(additionArray);
+        int maxSum = 0;
+        for (int i = 0; i < arraySize; i++) {
+            if (prefixSum[i] > maxSum) {
+                maxSum = prefixSum[i];
+            }
+        }
+        return maxSum;
+    }
 }
