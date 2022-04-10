@@ -1,14 +1,14 @@
 package array;
 
+import java.util.Arrays;
+
 public class O05_PrefixSumProblems {
 
     public int[] prefixSum(int[] arr) {
-        int[] prefixSum = new int[arr.length];
-        prefixSum[0] = arr[0];
         for (int i = 1; i < arr.length; i++) {
-            prefixSum[i] = prefixSum[i - 1] + arr[i];
+            arr[i] = arr[i - 1] + arr[i];
         }
-        return prefixSum;
+        return arr;
     }
 
 
@@ -21,6 +21,7 @@ public class O05_PrefixSumProblems {
         }
     }
 
+    // redid - 1
     public int maxSumAfterMAdditionOfGivenRange(int arraySize, int numberToBeAdded, int m, int[] start, int[] end) {
         int[] additionArray = new int[arraySize];
         for (int i = 0; i < m; i++) {
@@ -29,9 +30,11 @@ public class O05_PrefixSumProblems {
                 additionArray[end[i] + 1] += (-numberToBeAdded);
             }
         }
+        System.out.println(Arrays.toString(additionArray));
         int[] prefixSum = prefixSum(additionArray);
+        System.out.println(Arrays.toString(prefixSum));
         int maxSum = 0;
-        for (int i = 0; i < arraySize; i++) {
+        for (int i = 0; i < prefixSum.length; i++) {
             if (prefixSum[i] > maxSum) {
                 maxSum = prefixSum[i];
             }
