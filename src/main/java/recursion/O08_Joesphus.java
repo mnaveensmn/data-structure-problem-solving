@@ -2,7 +2,7 @@ package recursion;
 
 public class O08_Joesphus {
 
-    //redid - 4
+    //redid - 5
     public int survivingPosition(int n, int k) {
         if (n == 1) {
             return 1;
