@@ -29,12 +29,12 @@ public class Index {
         String s = "abc";
         String sCopy = String.copyValueOf(s.toCharArray());
         System.out.println(sCopy);
-        System.out.println(foo(513,2));
+        System.out.println(foo(513, 2));
     }
 
     static int foo(int n, int r) {
 
-        if (n  > 0) return (n%r +  foo (n/r, r ));
+        if (n > 0) return (n % r + foo(n / r, r));
 
         else return 0;
 
