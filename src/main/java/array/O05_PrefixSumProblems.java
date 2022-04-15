@@ -4,9 +4,10 @@ import java.util.Arrays;
 
 public class O05_PrefixSumProblems {
 
+    //redid - 1
     public int[] prefixSum(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
-            arr[i] = arr[i - 1] + arr[i];
+            arr[i] = arr[i] + arr[i - 1];
         }
         return arr;
     }
