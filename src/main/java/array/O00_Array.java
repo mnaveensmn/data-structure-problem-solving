@@ -37,7 +37,7 @@ public class O00_Array {
     }
 
     public int search(int element) {
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < size; i++) {
             if (array[i] == element) {
                 return i;
             }
