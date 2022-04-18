@@ -35,7 +35,7 @@ public class O03_ArrayRotation {
         return arr;
     }
 
-    //redid - 1
+    //redid - 2
     public int[] rotateUsingJugglingAlgorithm(int[] arr, int d) {
         int i, j, k, temp, n = arr.length;
         int gcd = gcd(n, d);
@@ -60,7 +60,7 @@ public class O03_ArrayRotation {
 
     private int gcd(int a, int b) {
         if (a == 0) {
-            return b;
+            return 0;
         }
         return gcd(b % a, a);
     }
