@@ -15,5 +15,7 @@ class O06_EquilibriumIndexTest {
         assertEquals(3, actual);
         actual = equilibriumIndex.eqIndex(new int[]{5, 1, 1, 1, 1, 1, 1});
         assertEquals(1, actual);
+        actual = equilibriumIndex.eqIndex(new int[]{1, 2, 4, 5, 6});
+        assertEquals(-1, actual);
     }
 }

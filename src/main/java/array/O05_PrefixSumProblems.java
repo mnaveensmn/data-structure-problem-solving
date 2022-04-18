@@ -32,9 +32,7 @@ public class O05_PrefixSumProblems {
                 additionArray[end[i] + 1] += (-numberToBeAdded);
             }
         }
-        System.out.println(Arrays.toString(additionArray));
         int[] prefixSum = prefixSum(additionArray);
-        System.out.println(Arrays.toString(prefixSum));
         int maxSum = 0;
         for (int i = 0; i < prefixSum.length; i++) {
             if (prefixSum[i] > maxSum) {
