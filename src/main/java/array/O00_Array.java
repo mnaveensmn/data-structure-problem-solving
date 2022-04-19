@@ -57,6 +57,15 @@ public class O00_Array {
         }
     }
 
+    public boolean isSorted() {
+        for (int i = 1; i < length; i++) {
+            if (array[i - 1] > array[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public void traverse() {
         for (int i = 0; i < length; i++) {
             System.out.print(array[i] + " ");
