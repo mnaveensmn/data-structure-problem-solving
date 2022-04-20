@@ -22,6 +22,15 @@ public class O03_ArrayRotation {
         return arr;
     }
 
+    public void leftRotateArrayByOne(int[] arr) {
+        int n = arr.length;
+        int temp = arr[0];
+        for (int i = 1; i < n; i++) {
+            arr[i - 1] = arr[i];
+        }
+        arr[n - 1] = temp;
+    }
+
     public int[] rotateOneAtTime(int[] arr, int d) {
         int n = arr.length;
         d = d % n;

@@ -50,4 +50,15 @@ class O03_ArrayRotationTest {
         Assertions.assertArrayEquals(new int[]{5, 6, 1, 2, 3, 4}, actualArray);
     }
 
+    @Test
+    public void shouldLeftRotateArrayByOne() {
+        int[] arr = new int[]{1, 2, 3, 4, 5};
+        O03_ArrayRotation arrayRotation = new O03_ArrayRotation();
+        arrayRotation.leftRotateArrayByOne(arr);
+        Assertions.assertArrayEquals(new int[]{2, 3, 4, 5, 1}, arr);
+        arrayRotation.leftRotateArrayByOne(arr);
+        arrayRotation.leftRotateArrayByOne(arr);
+        Assertions.assertArrayEquals(new int[]{4, 5, 1, 2, 3}, arr);
+    }
+
 }
