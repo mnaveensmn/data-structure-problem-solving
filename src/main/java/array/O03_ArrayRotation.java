@@ -2,23 +2,25 @@ package array;
 
 public class O03_ArrayRotation {
 
+    // redid - 1
     public int[] rotateUsingTempArr(int[] arr, int d) {
         int n = arr.length;
         d = d % n;
         int[] temp = new int[d];
+
         for (int i = 0; i < d; i++) {
             temp[i] = arr[i];
         }
-        // i - rotatedArrayIndex
-        // j = originalArrayIndex
+
         int i = 0;
         for (int j = d; j < n; j++) {
             arr[i++] = arr[j];
         }
-        // j - tempArrayIndex
+
         for (int j = 0; j < d; j++) {
             arr[i++] = temp[j];
         }
+
         return arr;
     }
 
@@ -69,7 +71,7 @@ public class O03_ArrayRotation {
 
     private int gcd(int a, int b) {
         if (a == 0) {
-            return 0;
+            return b;
         }
         return gcd(b % a, a);
     }
