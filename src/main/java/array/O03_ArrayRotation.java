@@ -69,10 +69,29 @@ public class O03_ArrayRotation {
         return arr;
     }
 
+    public int[] rotateUsingReverseMethod(int[] arr, int d) {
+        int n = arr.length;
+        reverse(arr, 0, d - 1);
+        reverse(arr, d, n - 1);
+        reverse(arr, 0, n - 1);
+        return arr;
+    }
+
     private int gcd(int a, int b) {
         if (a == 0) {
             return b;
         }
         return gcd(b % a, a);
     }
+
+    public void reverse(int[] arr, int start, int end) {
+        if (start >= end) {
+            return;
+        }
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        reverse(arr, start + 1, end - 1);
+    }
+
 }

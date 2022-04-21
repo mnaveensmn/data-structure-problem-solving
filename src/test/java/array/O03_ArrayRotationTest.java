@@ -51,6 +51,21 @@ class O03_ArrayRotationTest {
     }
 
     @Test
+    public void shouldRotateArrayUsingReversalMethod() {
+        O03_ArrayRotation arrayRotation = new O03_ArrayRotation();
+        int[] actualArray = arrayRotation.rotateUsingReverseMethod(new int[]{1, 2, 3, 4, 5}, 3);
+        Assertions.assertArrayEquals(new int[]{4, 5, 1, 2, 3}, actualArray);
+        actualArray = arrayRotation.rotateUsingReverseMethod(new int[]{1, 2, 3, 4, 5, 6}, 1);
+        Assertions.assertArrayEquals(new int[]{2, 3, 4, 5, 6, 1}, actualArray);
+        actualArray = arrayRotation.rotateUsingReverseMethod(new int[]{1, 2, 3, 4, 5, 6}, 6);
+        Assertions.assertArrayEquals(new int[]{1, 2, 3, 4, 5, 6}, actualArray);
+        actualArray = arrayRotation.rotateUsingReverseMethod(new int[]{1, 2, 3, 4, 5, 6}, 0);
+        Assertions.assertArrayEquals(new int[]{1, 2, 3, 4, 5, 6}, actualArray);
+        actualArray = arrayRotation.rotateUsingReverseMethod(new int[]{1, 2, 3, 4, 5, 6}, 4);
+        Assertions.assertArrayEquals(new int[]{5, 6, 1, 2, 3, 4}, actualArray);
+    }
+
+    @Test
     public void shouldLeftRotateArrayByOne() {
         int[] arr = new int[]{1, 2, 3, 4, 5};
         O03_ArrayRotation arrayRotation = new O03_ArrayRotation();
