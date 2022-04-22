@@ -12,6 +12,7 @@ public class O12_LeadersInArray {
         for (int i = n - 2; i >= 0; i--) {
             if (arr[i] > currLeader) {
                 leaders.add(arr[i]);
+                currLeader = arr[i];
             }
         }
         return leaders.stream().mapToInt(i -> i).toArray();

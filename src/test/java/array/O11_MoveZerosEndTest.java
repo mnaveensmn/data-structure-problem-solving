@@ -14,7 +14,6 @@ class O11_MoveZerosEndTest {
         arr = new int[]{1, 0, 2, 0, 3, 0};
         moveZerosEnd.moveZeros(arr);
         Assertions.assertArrayEquals(new int[]{1, 2, 3, 0, 0, 0}, arr);
-
     }
 
 }
