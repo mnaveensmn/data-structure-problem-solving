@@ -3,8 +3,6 @@ package array;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 class O14_FrequencyOfSortedArrayTest {
 
     @Test
