@@ -33,8 +33,8 @@ public class O14_FrequencyOfSortedArray {
                 arr[elementIndex] = -1;
             } else {
                 arr[elementIndex]--;
-                i++;
                 arr[i] = 0;
+                i++;
             }
         }
         return arr;
