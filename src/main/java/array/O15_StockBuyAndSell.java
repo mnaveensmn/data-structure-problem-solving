@@ -20,7 +20,7 @@ public class O15_StockBuyAndSell {
         return profit;
     }
 
-    //redid - 1
+    //redid - 2
     public int maxProfitUsingEfficientSolution(int[] arr) {
         int n = arr.length;
         int profit = 0;
