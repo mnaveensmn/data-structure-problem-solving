@@ -2,7 +2,7 @@ package array;
 
 public class O18_MaxSubArraySum {
 
-    public int maxSubArraySum(int[] arr) {
+    public int maxSubArraySumUsingNaiveSolution(int[] arr) {
         int n = arr.length;
         int res = 0;
         for (int i = 0; i < n; i++) {
