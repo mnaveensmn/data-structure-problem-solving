@@ -2,19 +2,29 @@ package array;
 
 public class O07_KadaneAlgorithm {
 
-    //redid - 1
-    public int largestSumSubArray(int[] arr) {
-        int maxSoFar = Integer.MIN_VALUE;
-        int maxEndingHere = 0;
-        for (int i = 0; i < arr.length; i++) {
-            maxEndingHere += arr[i];
-            if (maxEndingHere < 0) {
-                maxEndingHere = 0;
+    public int maxSubArraySumUsingNaiveSolution(int[] arr) {
+        int n = arr.length;
+        int res = 0;
+        for (int i = 0; i < n; i++) {
+            int curr = 0;
+            for (int j = i; j < n; j++) {
+                curr += arr[j];
+                res = Math.max(curr, res);
             }
-            if (maxEndingHere > maxSoFar) {
-                maxSoFar = maxEndingHere;
-            }
+            System.out.println(i + " => " + res);
         }
-        return maxSoFar;
+        return res;
+    }
+
+    //redid - 2
+    public int largestSumSubArray(int[] arr) {
+        int result = arr[0];
+        int maxEnding = arr[0];
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            maxEnding = Math.max(maxEnding + arr[i], arr[i]);
+            result = Math.max(maxEnding, result);
+        }
+        return result;
     }
 }
