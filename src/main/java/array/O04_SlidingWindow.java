@@ -12,23 +12,19 @@ public class O04_SlidingWindow {
 
     //redid - 1
     public int maxSumOfKElements(int[] arr, int k) {
-        int windowSum = 0, i;
         int n = arr.length;
-        int maxSum = Integer.MIN_VALUE;
+        int currSum = 0, i;
         if (k > n) {
-            return maxSum;
+            return Integer.MIN_VALUE;
         }
         for (i = 0; i < k; i++) {
-            windowSum += arr[i];
+            currSum += arr[i];
         }
-        int maxWindowSum = windowSum;
+        int maxSum = currSum;
         for (; i < n; i++) {
-            int currWindowFirstIndex = i - k;
-            windowSum = windowSum - arr[currWindowFirstIndex] + arr[i];
-            if (windowSum > maxWindowSum) {
-                maxWindowSum = windowSum;
-            }
+            currSum = currSum - arr[i - k] + arr[i];
+            maxSum = Math.max(maxSum, currSum);
         }
-        return maxWindowSum;
+        return maxSum;
     }
 }
