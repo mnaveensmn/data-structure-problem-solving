@@ -16,6 +16,8 @@ class O22_SubArrayWithGivenSumTest {
         Assertions.assertTrue(actual);
         actual = subArrayWithGivenSum.subArraySum(new int[]{1, 2, 3, 4, 50, 3}, 50);
         Assertions.assertTrue(actual);
+        actual = subArrayWithGivenSum.subArraySum(new int[]{1, 2, 3, 4, 61, 3}, 50);
+        Assertions.assertFalse(actual);
     }
 
 }

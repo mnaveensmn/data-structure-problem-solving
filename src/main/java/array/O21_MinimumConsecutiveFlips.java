@@ -2,6 +2,7 @@ package array;
 
 public class O21_MinimumConsecutiveFlips {
 
+    //redid - 1
     public String minimumFlips(int[] arr) {
         int n = arr.length;
         StringBuilder res = new StringBuilder();
