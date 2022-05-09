@@ -1,10 +1,8 @@
 package array;
 
-import java.util.Arrays;
-
 public class O05_PrefixSumProblems {
 
-    //redid - 1
+    //redid - 2
     public int[] prefixSum(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             arr[i] = arr[i] + arr[i - 1];
