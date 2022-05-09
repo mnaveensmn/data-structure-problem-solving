@@ -27,7 +27,7 @@ public class O05_PrefixSumProblems {
         for (int i = 0; i < m; i++) {
             additionArray[start[i]] += numberToBeAdded;
             if (end[i] < (arraySize - 1)) {
-                additionArray[end[i]] -= numberToBeAdded;
+                additionArray[end[i] + 1] -= numberToBeAdded;
             }
         }
         int maxSum = additionArray[0];
