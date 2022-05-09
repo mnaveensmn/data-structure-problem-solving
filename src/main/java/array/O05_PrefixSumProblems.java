@@ -21,18 +21,18 @@ public class O05_PrefixSumProblems {
         }
     }
 
-    // redid - 1
+    // redid - 2
     public int maxSumAfterMAdditionOfGivenRange(int arraySize, int numberToBeAdded, int m, int[] start, int[] end) {
         int[] additionArray = new int[arraySize];
         for (int i = 0; i < m; i++) {
             additionArray[start[i]] += numberToBeAdded;
             if (end[i] < (arraySize - 1)) {
-                additionArray[end[i] + 1] += (-numberToBeAdded);
+                additionArray[end[i]] -= numberToBeAdded;
             }
         }
+        int maxSum = additionArray[0];
         int[] prefixSum = prefixSum(additionArray);
-        int maxSum = 0;
-        for (int i = 0; i < prefixSum.length; i++) {
+        for (int i = 1; i < arraySize; i++) {
             if (prefixSum[i] > maxSum) {
                 maxSum = prefixSum[i];
             }
