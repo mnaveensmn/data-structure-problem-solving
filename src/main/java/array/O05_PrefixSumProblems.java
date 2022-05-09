@@ -11,7 +11,7 @@ public class O05_PrefixSumProblems {
     }
 
 
-    //redid - 1
+    //redid - 2
     public int sumInRange(int[] arr, int start, int end) {
         int[] prefixSum = prefixSum(arr);
         if (start == 0) {
