@@ -15,11 +15,11 @@ public class O02_PowerOfTwo {
         return true;
     }
 
-    //Redid - 3
+    //Redid - 4
     public boolean isPowerOfTwo(int n) {
-        if (n == 0) {
-            return false;
-        }
-        return (n & (n - 1)) == 0;
+      if (n == 0){
+        return false;
+      }
+      return (n & (n - 1)) == 0;
     }
 }
