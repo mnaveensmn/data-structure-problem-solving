@@ -5,13 +5,14 @@ import java.util.Set;
 
 public class O27_SubArrayZeroSum {
 
+    //redid -1
     public boolean isZeroSumExist(int[] arr) {
         Set<Integer> set = new HashSet<>();
         int preSum = 0;
         for (int i = 0; i < arr.length; i++) {
             preSum += arr[i];
-            if (preSum == 0 || arr[i] == 0 || set.contains(arr[i])) {
-                return true;
+            if (arr[i] == 0 || preSum == 0 || set.contains(preSum)) {
+                return false;
             }
             set.add(preSum);
         }
