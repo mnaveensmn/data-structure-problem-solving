@@ -2,6 +2,7 @@ package array;
 
 public class O26_ThreeEqualSubArray {
 
+    //redid - 2
     public String findSplit(int[] arr) {
         int preSum = 0;
         int i1 = -1, i2 = -1;
@@ -9,12 +10,9 @@ public class O26_ThreeEqualSubArray {
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
-        if (sum % 3 != 0) {
-            return "-1";
-        }
         int S1 = sum / 3;
         int S2 = 2 * S1;
-        for (int i = 0; i < arr.length - 1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             preSum += arr[i];
             if (preSum == S1 && i1 == -1) {
                 i1 = i;
