@@ -12,7 +12,7 @@ public class O27_SubArrayZeroSum {
         for (int i = 0; i < arr.length; i++) {
             preSum += arr[i];
             if (arr[i] == 0 || preSum == 0 || set.contains(preSum)) {
-                return false;
+                return true;
             }
             set.add(preSum);
         }
