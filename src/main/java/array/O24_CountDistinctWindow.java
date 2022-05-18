@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class O24_CountDistinctWindow {
 
+    //redid - 1
     public int[] countDistinctWindow(int[] arr, int k) {
         ArrayList<Integer> distinctWindowCounts = new ArrayList<>();
         Map<Integer, Integer> map = new HashMap<>();
