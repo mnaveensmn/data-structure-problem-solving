@@ -40,14 +40,14 @@ public class O14_FrequencyOfArray {
         return arr;
     }
 
-    //redid - 2
+    //redid - 3
     public int[] frequencyOfUnSortedArrayUsingAddingNApproach(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             arr[i] = arr[i] - 1;
         }
         for (int i = 0; i < n; i++) {
-            arr[arr[i] % n] = arr[arr[i] % n] + n;
+            arr[arr[i]] = arr[arr[i]] + n;
         }
         for (int i = 0; i < n; i++) {
             arr[i] = arr[i] / n;
