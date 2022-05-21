@@ -18,7 +18,7 @@ public class O08_MergeTwoSortedArray {
         while (i < n) {
             arr3[k++] = arr1[i++];
         }
-        while (j < n) {
+        while (j < m) {
             arr3[k++] = arr2[j++];
         }
         return arr3;
