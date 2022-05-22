@@ -2,7 +2,7 @@ package array;
 
 public class O17_MaxConsecutive1s {
 
-    //redid - 1
+    //redid - 2
     public int count(int[] arr) {
         int res = 0, curr = 0;
         int n = arr.length;
@@ -11,7 +11,7 @@ public class O17_MaxConsecutive1s {
                 curr = 0;
             } else {
                 curr++;
-                res = Math.max(curr, res);
+                res = Math.max(res, curr);
             }
         }
         return res;
