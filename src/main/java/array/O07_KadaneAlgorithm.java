@@ -16,14 +16,14 @@ public class O07_KadaneAlgorithm {
         return res;
     }
 
-    //redid - 3
+    //redid - 4
     public int largestSumSubArray(int[] arr) {
-        int n = arr.length;
         int maxEnding = arr[0];
         int result = arr[0];
+        int n = arr.length;
         for (int i = 1; i < n; i++) {
             maxEnding = Math.max(maxEnding + arr[i], arr[i]);
-            result = Math.max(result, maxEnding);
+            result = Math.max(maxEnding, result);
         }
         return result;
     }
