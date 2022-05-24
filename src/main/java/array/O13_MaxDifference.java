@@ -2,7 +2,7 @@ package array;
 
 public class O13_MaxDifference {
 
-    //redid - 2
+    //redid - 3
     public int findMaxDifference(int[] arr) {
         int n = arr.length;
         if (n <= 1) {
