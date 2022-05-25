@@ -6,7 +6,7 @@ import java.util.List;
 
 public class O03_SieveOfEratosthenes {
 
-    //Redid - 4
+    //Redid - 5
     public int[] primeNumbers(int n) {
         boolean[] primes = new boolean[n + 1];
         Arrays.fill(primes, true);
@@ -23,7 +23,6 @@ public class O03_SieveOfEratosthenes {
                 primeNumbers.add(i);
             }
         }
-
         return primeNumbers.stream().mapToInt(i -> i).toArray();
     }
 
