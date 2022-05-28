@@ -2,7 +2,7 @@ package array;
 
 public class O02_ReverseArray {
 
-    //Redid - 5
+    //Redid - 6
     public void reverse(char[] arr, int start, int end) {
         if (start >= end) {
             return;
