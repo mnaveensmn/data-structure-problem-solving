@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class O12_LeadersInArray {
 
-    //redid - 2
+    //redid - 3
     public int[] leadersInArray(int[] arr) {
         int n = arr.length;
         int currLeader = arr[n - 1];
