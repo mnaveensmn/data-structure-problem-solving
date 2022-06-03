@@ -2,7 +2,7 @@ package array;
 
 public class O11_MoveZerosEnd {
 
-    //redid - 2
+    //redid - 3
     public void moveZeros(int[] arr) {
         int n = arr.length;
         int lastNonZeroIndex = 0;
