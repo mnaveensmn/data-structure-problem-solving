@@ -22,9 +22,11 @@ public class O10_RemoveDuplicatesFromSortedArray {
         return arr;
     }
 
+    //redid - 1
     public int efficientSolution(int[] arr) {
-        int res = 1;
-        for (int i = 1; i < arr.length; i++) {
+        int res = 1,
+                n = arr.length;
+        for (int i = 1; i < n; i++) {
             if (arr[i] != arr[res - 1]) {
                 arr[res] = arr[i];
                 res++;
