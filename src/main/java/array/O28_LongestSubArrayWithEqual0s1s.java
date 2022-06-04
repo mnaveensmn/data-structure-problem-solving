@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class O28_LongestSubArrayWithEqual0s1s {
 
+    //redid - 1
     public int maxLength(int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
         int sum = 0;
