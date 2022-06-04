@@ -2,6 +2,7 @@ package array;
 
 public class O30_WaveArray {
 
+    //redid - 1
     public int[] convert(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; i += 2) {
