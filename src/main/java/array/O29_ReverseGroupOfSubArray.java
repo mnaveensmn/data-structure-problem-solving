@@ -2,7 +2,7 @@ package array;
 
 public class O29_ReverseGroupOfSubArray {
 
-    //redid - 1
+    //redid - 2
     public int[] reverseSubArray(int[] arr, int k) {
         int n = arr.length;
         for (int i = 0; i < n; i += k) {
