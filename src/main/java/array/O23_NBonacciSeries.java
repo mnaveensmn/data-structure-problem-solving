@@ -2,6 +2,7 @@ package array;
 
 public class O23_NBonacciSeries {
 
+    //redid -1
     public int[] nBonacciSeries(int n, int m) {
         int[] a = new int[m];
         for (int i = 0; i < m; i++) {
