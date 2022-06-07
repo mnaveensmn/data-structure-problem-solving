@@ -18,9 +18,9 @@ public class O07_KadaneAlgorithm {
 
     //redid - 7
     public int largestSumSubArray(int[] arr) {
-        int maxEnding = arr[0];
-        int result = arr[0];
-        int n = arr.length;
+        int n = arr.length,
+                result = arr[0],
+                maxEnding = arr[0];
         for (int i = 1; i < n; i++) {
             maxEnding = Math.max(maxEnding + arr[i], arr[i]);
             result = Math.max(maxEnding, result);

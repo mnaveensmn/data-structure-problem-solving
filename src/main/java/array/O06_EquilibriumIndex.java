@@ -4,15 +4,15 @@ public class O06_EquilibriumIndex {
 
     //redid - 2
     public int eqIndex(int[] arr) {
-        int sum = 0,
-                leftSum = 0,
-                n = arr.length;
+        int n = arr.length,
+                sum = 0,
+                leftSum = 0;
         for (int i = 0; i < n; i++) {
             sum += arr[i];
         }
         for (int i = 0; i < n; i++) {
             sum -= arr[i];
-            if (leftSum == sum) {
+            if (sum == leftSum) {
                 return i;
             }
             leftSum += arr[i];
