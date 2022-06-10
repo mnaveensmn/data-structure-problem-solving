@@ -12,12 +12,12 @@ public class O07_PowerSet {
     }
 
     //redid - 5
-    public void powerSetOfString(String str, int index, String currString, List<String> powerSet) {
-        if (str.length() == index) {
-            powerSet.add(currString);
+    public void powerSetOfString(String s, int i, String curr, List<String> l) {
+        if (s.length() == i) {
+            l.add(curr);
             return;
         }
-        powerSetOfString(str, index + 1, currString + str.charAt(index), powerSet);
-        powerSetOfString(str, index + 1, currString, powerSet);
+        powerSetOfString(s, i + 1, curr + s.charAt(i), l);
+        powerSetOfString(s, i + 1, curr, l);
     }
 }
