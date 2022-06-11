@@ -15,8 +15,6 @@ public class O32_SmallestPositiveNumberMissing {
             }
         }
 
-        System.out.println(Arrays.toString(arr));
-
         int[] segregated = new int[j];
         n = segregated.length;
         for (i = 0; i < n; i++) {
@@ -37,4 +35,6 @@ public class O32_SmallestPositiveNumberMissing {
         }
         return n + 1;
     }
+
+
 }
