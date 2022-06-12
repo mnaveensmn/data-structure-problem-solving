@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class O32_SmallestPositiveNumberMissing {
 
+    //redid - 1
     public int segregationApproach(int[] arr) {
         int i, j = 0, x, n = arr.length, temp;
         for (i = 0; i < n; i++) {
