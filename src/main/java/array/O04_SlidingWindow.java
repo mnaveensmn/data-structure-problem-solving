@@ -10,7 +10,7 @@ package array;
  */
 public class O04_SlidingWindow {
 
-    //redid - 1
+    //redid - 2
     public int maxSumOfKElements(int[] arr, int k) {
         int n = arr.length;
         int currSum = 0, i;
